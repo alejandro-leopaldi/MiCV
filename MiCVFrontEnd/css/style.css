@@ -1,0 +1,131 @@
+/* Box model universal */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #5a8cce;
+  padding: 20px;
+  color: #333;
+}
+
+.cv-container {
+  max-width: 1000px;
+  margin: auto;
+  background-color: #fff;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+/* Encabezado con Flexbox */
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+}
+
+.photo {
+  flex: 0 0 150px;
+}
+
+.photo img {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #3498db;
+}
+
+.info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.info h1 {
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.info p {
+  font-size: 14px;
+}
+
+.info a {
+  color: #3498db;
+  text-decoration: none;
+}
+
+.info a:hover {
+  text-decoration: underline;
+}
+
+/* Secciones con Flexbox */
+.section {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.section h2 {
+  font-size: 22px;
+  color: #3498db;
+  border-bottom: 2px solid #ecf0f1;
+  padding-bottom: 5px;
+}
+
+.section p {
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Habilidades con Flexbox */
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  list-style: none;
+}
+
+.skills li {
+  background-color: #dff0fa;
+  color: #2c3e50;
+  padding: 8px 14px;
+  border-radius: 5px;
+  font-size: 14px;
+}
+
+/* Experiencia */
+.section h3 {
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+.section em {
+  font-size: 14px;
+  color: #7f8c8d;
+}
+
+.section ul {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-left: 20px;
+  font-size: 14px;
+  line-height: 1.5;
+}
+
+/* Educación */
+.section strong {
+  font-size: 15px;
+  color: #2c3e50;
+}
